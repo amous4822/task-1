@@ -5,6 +5,7 @@
   }
   
   body {
+    padding-bottom: 50px;
     background-color: #eee;
     font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto,
       Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell,
@@ -115,6 +116,8 @@
   }
 
   .bottom-navbar {
+    opacity: 1;
+    z-index: 10;
     background-color: #303e4b;
     overflow: hidden;
     position: fixed;
