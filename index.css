@@ -16,18 +16,66 @@
 
   /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
+    background-color: #303e4b;
     overflow: hidden;
   }
   
   /* Style the links inside the navigation bar */
   .topnav a {
-    float: left;
+    float: right;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 12px 1%;
     text-decoration: none;
     font-size: 17px;
+  }
+
+  /* navbar pngs */
+  .navbar-icons {
+    margin-right: 2%;
+  }
+  .navbar-searchbar{
+    margin-top: 10px;
+    margin-left: 2px;
+    border-radius: 6px;    
+    height:30px;
+    width:30%;
+  }
+
+  .navbar-homeIcon:before {
+    content: url("home.png");
+  }
+
+  .navbar-mainIcon:before{
+    float: left;
+    padding: 9px 1%;
+    content: url("linkedin.png");
+  }
+
+  .navbar-peopleIcon:before {
+    content: url("user.png");
+  }
+
+  .navbar-caseIcon:before {
+    content: url("portfolio.png");
+  }
+
+  .navbar-messageIcon:before {
+    content: url("comment\ \(1\).png");
+  }
+
+  .navbar-bellIcon:before {
+    content: url("notification.png");
+  }
+  .navbar-premium a{
+    padding: 13px;
+    color:#D4AF37;
+    font-size: 12px;
+  }
+
+  .navbar-premium a:hover{
+    background-color: #303e4b !important;
+    color:#D4AF37 !important ;
   }
   
   /* Change the color of links on hover */
@@ -35,12 +83,8 @@
     background-color: #ddd;
     color: black;
   }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #4CAF50;
-    color: white;
-  }
+
+  /* Add a color to the active/current link */  
   
   .container {
     background-color: white;
@@ -48,10 +92,62 @@
     display: flex;
     flex-direction: column;
     border: 1px solid #d3d3d3;
-    width: 50%;
+    width: 60%;
     margin: auto;    
     margin-top: 10px; left: 0; bottom: 0; right: 0;
   }
+
+  @media only screen and (min-width: 600px) {
+    
+    .mobile{
+      display: none;
+    }
+
+    .bottom-navbar{
+      display: none;
+    }
+  }
+
+
+  /* bottom navbar for mobile */
+
+  .navbar-plusIcon:before{
+    content: url(plus.png);
+  }
+
+  .bottom-navbar {
+    background-color: #303e4b;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .bottom-navbar a {
+    float: right;
+    margin-right: 10%;
+    display: block;
+    color: #f2f2f2;
+    padding: 1% ;
+    padding-right: 1.5%;  
+    
+  }
+  
+  /* Change the color of links on hover */
+  .bottom-navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .bottom-navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  /*  */
+
+
 
   @media only screen and (max-width: 600px) {
     .container {
@@ -60,8 +156,18 @@
     body{
       font-size: 80%;
     }
+
     .desktop{
       display: none;
+    }
+
+    .navbar-searchbar{
+      margin-left: 5%;
+      width:65%;
+    }
+
+    .mobile a {
+      margin:1%;
     }
 
     .topnav a{
@@ -70,7 +176,6 @@
     }
   }
 
-  
   .item {
     padding: 10px 20px;
     position: relative;
